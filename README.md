@@ -1,21 +1,20 @@
 Terraform Fundamentals (Tutorials 01–08)
 
 This repository contains the completed Terraform assignment tutorials and proof screenshots for AWS infrastructure in region `ap-south-1`.
-## 📁 Repository Directory Structure
 
-```text
-.
-├── 03-build-infrastructure/    # Initial EC2 provisioning config
-│   ├── main.tf
-│   ├── terraform.tfstate
-│   └── .terraform.lock.hcl
-├── 04-change-infrastructure/   # Resource updates & tag modifications
-├── 05-destroy-infrastructure/  # Automated infrastructure teardown
-├── 06-input-variables/         # Parametrized configuration files
-├── 07-outputs/                 # Exposed resource metadata & IPs
-├── 08-remote-state/            # Backend state management logic
+## 📁 Directory Structure
 
 
+├── 01-install-terraform-cli/      # Terraform binary installation verification
+├── 02-setup-aws-cli/              # AWS CLI authentication & IAM identity setup
+├── 03-build-infrastructure/       # Initial EC2 provisioning config
+├── 04-change-infrastructure/      # Resource updates & tag modifications
+├── 05-destroy-infrastructure/     # Automated infrastructure teardown
+├── 06-input-variables/            # Parametrized configuration files
+├── 07-outputs/                    # Exposed resource metadata & public IPs
+├── 08-remote-state/               # Backend state management logic
+├── screenshots/                   # Complete CLI & AWS Console proof images
+└── README.md                      # Project documentation
 
 **Tutorial 01: Install Terraform CLI
  --> Verified local installation of the Terraform binary and ensured executable path mapping.
