@@ -14,7 +14,7 @@ This repository contains the completed Terraform assignment tutorials and proof 
 ├── 06-input-variables/         # Parametrized configuration files
 ├── 07-outputs/                 # Exposed resource metadata & IPs
 ├── 08-remote-state/            # Backend state management logic
-├── screenshots/                # CLI execution & AWS Console proof
+
 
 
 **Tutorial 01: Install Terraform CLI
