@@ -1,15 +1,44 @@
 Terraform Fundamentals (Tutorials 01–08)
 
 This repository contains the completed Terraform assignment tutorials and proof screenshots for AWS infrastructure in region `ap-south-1`.
+## 📁 Repository Directory Structure
 
---> Directory Structure
+```text
+.
+├── 03-build-infrastructure/    # Initial EC2 provisioning config
+│   ├── main.tf
+│   ├── terraform.tfstate
+│   └── .terraform.lock.hcl
+├── 04-change-infrastructure/   # Resource updates & tag modifications
+├── 05-destroy-infrastructure/  # Automated infrastructure teardown
+├── 06-input-variables/         # Parametrized configuration files
+├── 07-outputs/                 # Exposed resource metadata & IPs
+├── 08-remote-state/            # Backend state management logic
+├── screenshots/                # CLI execution & AWS Console proof
 
- --> 01-Install Terraform CLI   - Terminal Install 
- --> 02-Setup AWS CLI           - AWS Console verification 
- --> 03-build-infrastructure/   - Basic EC2 provisioning
- --> 04-change-infrastructure/  - Resource updates and tagging
- --> 05-destroy-infrastructure/ - Resource cleanup
- --> 06-input-variables/        - Configuration parametrization
- --> 07-outputs/                - Exposing resource attributes
- --> 08-remote-state/           - Backend state management
- 
+
+**Tutorial 01: Install Terraform CLI
+ --> Verified local installation of the Terraform binary and ensured executable path mapping.
+ --> Verification: terraform -v
+
+**Tutorial 02: Setup AWS CLI & Access Keys
+-->  Configured programmatic access credentials and default region (ap-south-1) via AWS CLI.
+-->  Verification: aws sts get-caller-identity
+
+**Tutorial 03: Build Infrastructure
+-->  Provisioned an initial EC2 instance using dynamic Amazon Linux 2023 AMI data sources.
+
+**Tutorial 04: Change Infrastructure
+-->  Applied in-place updates, modifying resource tags without causing unwanted instance replacement.
+
+**Tutorial 05: Destroy Infrastructure
+-->  Executed complete infrastructure teardown (terraform destroy) to prevent unwanted AWS charges.
+
+**Tutorial 06: Input Variables
+-->  Refactored hardcoded parameters into dynamic input variables (variables.tf) for environment reusability.
+
+**Tutorial 07: Outputs
+--> Configured output blocks (outputs.tf) to extract and surface key instance details (Public IP, Instance ID).
+
+**Tutorial 08: Remote State
+--> Configured state tracking and verified state file management (terraform state list).
